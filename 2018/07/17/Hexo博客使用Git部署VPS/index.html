@@ -123,7 +123,7 @@
 <meta property="og:description" content="搬瓦工VPS已经用了3年了，一直用做科学上网使用，感觉浪费了。以前也一直用的印象笔记做记录，几经思考之下，觉得还是搭建一个自己的博客网站吧。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://raw.githubusercontent.com/jlancer/MyPictureBed/master/blogs/6954abd3ly1fxujefztxhj20nc02awen.jpg">
-<meta property="og:updated_time" content="2019-12-10T14:54:05.088Z">
+<meta property="og:updated_time" content="2020-04-04T17:18:54.506Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客使用Git部署VPS">
 <meta name="twitter:description" content="搬瓦工VPS已经用了3年了，一直用做科学上网使用，感觉浪费了。以前也一直用的印象笔记做记录，几经思考之下，觉得还是搭建一个自己的博客网站吧。">
@@ -436,7 +436,7 @@
 <p>若输入<code>nginx -V</code>可以看到nginx版本信息，则安装成功。</p>
 <p>配置nginx</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/nginx/conf.d/blog.conf</span><br></pre></td></tr></table></figure>
-<p>录入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># blog.conf</span><br><span class="line">server &#123;</span><br><span class="line">  listen 80;</span><br><span class="line">  root /var/www/blog;</span><br><span class="line">  index index.htm index.html index.php;</span><br><span class="line">  server_name jlancer.info blog.jlancer.info localhost;</span><br><span class="line">  location / &#123;</span><br><span class="line">    try_files $uri $uri/ /index.html;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>录入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># blog.conf</span><br><span class="line">server &#123;</span><br><span class="line">  listen 80;</span><br><span class="line">  root /var/www/blog;</span><br><span class="line">  index index.htm index.html index.php;</span><br><span class="line">  server_name blog.jlancer.info localhost;</span><br><span class="line">  location / &#123;</span><br><span class="line">    try_files $uri $uri/ /index.html;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>设置开机启动：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable nginx.service</span><br></pre></td></tr></table></figure>
 <p>启动：</p>
@@ -698,7 +698,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-apple"></i>
   </span>
